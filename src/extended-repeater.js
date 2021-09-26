@@ -22,7 +22,7 @@ export default function repeater(str, options) {
     options = options !== undefined ? options : {};
     options.repeatTimes = options.repeatTimes === undefined ? 1 : options.repeatTimes
     options.separator = options.separator === undefined ? defaultSeparator : options.separator
-    options.addition = `${options.addition}`
+    options.addition = options.addition === undefined ? '' : `${options.addition}`
     options.additionRepeatTimes = options.additionRepeatTimes === undefined ? 1 : options.additionRepeatTimes
     options.additionSeparator = options.additionSeparator === undefined ? defaultAdditionSeparator : options.additionSeparator
 
